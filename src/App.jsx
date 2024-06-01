@@ -5,11 +5,11 @@ const App = () => {
   const x = 10; 
   const y = 20;
   const names = ['Shankhalp','Sondeep','Amrit'];
-  const loggedIn = true;
+  const loggedIn = false;
 
-  if(loggedIn){
-    return <h1>Hello Member</h1>;
-  }
+  // if(loggedIn){
+  //   return <h1>Hello Member</h1>;
+  // }
 
   return (
     <>
@@ -21,6 +21,7 @@ const App = () => {
           <li key ={ index } >{name}</li>
         ))}
       </ul>
+      { loggedIn? <h1>Hello Member</h1>: <h1>Hello Guest</h1>}
     </>
     
   )
